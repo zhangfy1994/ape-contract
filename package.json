@@ -7,10 +7,29 @@
   },
   "devDependencies": {
     "@matterlabs/hardhat-zksync-solc": "^0.3.17",
-    "hardhat": "^2.13.0"
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.2",
+    "chai": "^4.3.7",
+    "hardhat": "^2.14.1",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.9.2",
     "@thirdweb-dev/contracts": "^3",
+    "@typechain/hardhat": "^8.0.0",
+    "hardhat-gas-reporter": "^1.0.8",
+    "install": "^0.13.0",
+    "solidity-coverage": "^0.8.1",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.2.0",
     "zksync-web3": "^0.14.3"
+  },
+  "volta": {
+    "node": "18.16.1"
   }
 }
