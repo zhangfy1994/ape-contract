@@ -2,6 +2,8 @@
 
 ### 部署到`Polygon Mumbai 测试网络`
 
+- 合约地址 `0x4501d1941C5A7F3665cDf6eF24E741B3682ab5E8`
+
 ### [前端项目地址](https://github.com/zhangfy1994/ape-app)
 
 ## 项目目录
