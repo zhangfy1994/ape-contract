@@ -1,47 +1,53 @@
-## Getting Started
+# 此项目主要参考`@openzeppelin/contracts` 和 `BAYC无聊猿` 源码实现。
 
-Create a project using this example:
+## 项目目录
 
-```bash
-npx thirdweb create --contract --template hardhat-javascript-starter
+- `contracts` 是合约文件。
+
+- `test` 目录是测试文件
+
+- `scripts` 目录是部署文件
+
+## 主要技术
+
+- `solidity^0.8.0`
+- `hardhat` 开发环境
+- `chai`、`hardhat-ethers` 测试
+- `thirdweb` 构建、部署合约
+- `pnpm` 管理依赖
+
+## ⚠️ 注意点
+
+- node 版本要 `>=18`，是 hardhat 的测试插件要求
+
+## 项目使用
+
+- 安装依赖
+
+```shell
+npm install
+
+pnpm install
+
+yarn install
 ```
 
-You can start editing the page by modifying `contracts/Contract.sol`.
+- 跑测试
 
-To add functionality to your contracts, you can use the `@thirdweb-dev/contracts` package which provides base contracts and extensions to inherit. The package is already installed with this project. Head to our [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) to learn more.
+```shell
+npx hardhat test
 
-## Building the project
-
-After any changes to the contract, run:
-
-```bash
-npm run build
-# or
-yarn build
+// 或指定具体测试文件
+npx hardhat test ./test/filename
 ```
 
-to compile your contracts. This will also detect the [Contracts Extensions Docs](https://portal.thirdweb.com/contractkit) detected on your contract.
+- 部署
 
-## Deploying Contracts
+```shell
+// 通过thirdweb dsahboard 部署
+// https://portal.thirdweb.com/getting-started/contracts
+pnpm run deploy
 
-When you're ready to deploy your contracts, just run one of the following command to deploy you're contracts:
-
-```bash
-npm run deploy
-# or
-yarn deploy
+// 部署到本地环境
+npx hardhat run scripts/deploy.ts --network localhost
 ```
-
-## Releasing Contracts
-
-If you want to release a version of your contracts publicly, you can use one of the followings command:
-
-```bash
-npm run release
-# or
-yarn release
-```
-
-## Join our Discord!
-
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
