@@ -1,4 +1,6 @@
-# 此项目主要参考`@openzeppelin/contracts` 和 `BAYC无聊猿` 源码实现。
+## 此项目主要参考`@openzeppelin/contracts` 和 `BAYC无聊猿` 源码实现。
+
+### 部署到`Polygon Mumbai 测试网络`
 
 ## 项目目录
 
